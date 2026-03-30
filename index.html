@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Aura - Jewelry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header  -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUXE AURA</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html #newsletter">CONTACT</a></li>
+                    
+                </ul>
+            </nav>  
+           <div class="header-icons">
+             
+      <a href="login.html" class="user-icon">
+        <i class="fas fa-user"></i>
+      </a>
+            <div class="cart-icon" id="cart-btn">
+               
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg> 
+                <span class="badge" id="cart-count">0</span>
+            </div></div>
+        </div>
+    </header>
+
+    <!-- Cart Draw Section -->
+     <aside>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>YOUR SELECTIONS</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>SUBTOTAL</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+        </div>
+    </div></aside>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content ">
+            <span class="sub-title">LUXE AURA JEWELRY</span>
+            <h1>Timeless Elegance.<br><span class="gold-text">Crafted to Shine.</span></h1>
+            <p>Discover our exquisite collection of handcrafted jewelry, where every piece tells a story of luxury.</p>
+            <a href="shop.html" class="btn-explore">EXPLORE COLLECTION <span style="margin-left:10px">→</span></a>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers container">
+        <div class="section-header">
+            <span class="sub-heading">MOST LOVED</span>
+            <h2 class="main-heading">Best Sellers</h2>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="images/side-view-pair-silver-diamond-earrings-with-emerald-black-wall-black.webp" alt="Necklace">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">silver diamond earrings</h3>
+                    <p class="price">$2,850</p>
+                    <button class="add-to-cart" onclick="addToCart('Eternal Radiance Necklace', 2850, 'images/side-view-pair-silver-diamond-earrings-with-emerald-black-wall-black.jpg')">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="images/abstract-gold-chain-jewellery-presentation.webp" alt="Ring">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">The Aura Bold Cuban Chain</h3>
+                    <p class="price">$4,200</p>
+                    <button class="add-to-cart" onclick="addToCart('Solitaire Diamond Ring', 4200, 'images/abstract-gold-chain-jewellery-presentation.jpg')">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="images/beautiful-engagement-ring-with-diamonds.webp" alt="Bracelet">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Solitaire Diamond Ring</h3>
+                    <p class="price">$1,950</p>
+                    <button class="add-to-cart" onclick="addToCart('Infinity Gold Bracelet', 1950, 'images/beautiful-engagement-ring-with-diamonds.jpg')">ADD TO BAG</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="images/luxury-jewellery-display.webp" alt="Earrings">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Royal Velvet Diamond Necklace</h3>
+                    <p class="price">$3,100</p>
+                    <button class="add-to-cart" onclick="addToCart('Royal Drop Earrings', 3100, 'images/luxury-jewellery-display.jpg')">ADD TO BAG</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="heritage-banner">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <span class="banner-sub">LIMITED EDITION</span>
+            <h2 class="banner-title">The Heritage Collection</h2>
+            <p class="banner-desc">An exclusive selection inspired by ancient artistry, reimagined for the modern woman.</p>
+            <a href="shop.html" class="banner-btn">DISCOVER NOW <span class="btn-arrow">→</span></a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-heading">TESTIMONIALS</span>
+                <h2 class="main-heading">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The craftsmanship is absolutely breathtaking. Every piece feels like it was made just for me."</p>
+                    <h4 class="client-name">Sophia Laurent</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Luxe Aura has become my go-to for special occasions. Pure elegance in every detail."</p>
+                    <h4 class="client-name">Isabella Chen</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"I've never received so many compliments. The quality and design are unmatched."</p>
+                    <h4 class="client-name">Amara Williams</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="newsletter-section" id="newsletter">
+                <h2 class="newsletter-title">Join the World of <span class="gold-text">Luxe Aura</span></h2>
+                <p class="newsletter-desc">Subscribe to receive updates on new collections, private events and luxury inspirations.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">LUXE AURA</div>
+                    <p class="brand-desc">Defining modern luxury since 2010. Our pieces are crafted with passion and precision to celebrate your most precious moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>COLLECTIONS</h4>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">The Heritage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CLIENT CARE</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Jewelry Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>OUR BOUTIQUES</h4>
+                    <p class="brand-desc" style="margin-top:0">5th Avenue, New York<br>Place Vendôme, Paris</p>
+                </div>
+            </div>
+
+             <div class="footer-bottom">
+            <p>&copy; 2025 LUXE AURA JEWELRY. ALL RIGHTS RESERVED.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+   <!-- Hidden form for visitor tracking -->
+<form name="visitor" netlify hidden>
+  <input type="hidden" name="form-name" value="visitor" />
+</form>
+
+<script>
+window.onload = function() {
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "form-name=visitor"
+  });
+};
+</script>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="index.js"></script>
+
+</body>
+</html>

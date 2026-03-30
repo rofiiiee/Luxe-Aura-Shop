@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Luxe Aura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+   <!-- Header  -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUXE AURA</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html #newsletter">CONTACT</a></li>
+                    
+                </ul>
+            </nav>  
+           <div class="header-icons">
+             
+      <a href="login.html" class="user-icon">
+        <i class="fas fa-user"></i>
+      </a>
+            <div class="cart-icon" id="cart-btn">
+               
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg> 
+                <span class="badge" id="cart-count">0</span>
+            </div></div>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <span class="sub-heading">JOIN THE CLUB</span>
+            <h2 class="auth-title">Create Account</h2>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="signup-name" required placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="signup-email" required placeholder="email@example.com">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="signup-password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="auth-btn">REGISTER</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+         <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">LUXE AURA</div>
+                    <p class="brand-desc">Defining modern luxury since 2010. Our pieces are crafted with passion and precision to celebrate your most precious moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>COLLECTIONS</h4>
+                    <ul>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                        <li><a href="shop.html">The Heritage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CLIENT CARE</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Jewelry Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>OUR BOUTIQUES</h4>
+                    <p class="brand-desc" style="margin-top:0">5th Avenue, New York<br>Place Vendôme, Paris</p>
+                </div>
+            </div>
+
+             <div class="footer-bottom">
+            <p>&copy; 2025 LUXE AURA JEWELRY. ALL RIGHTS RESERVED.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
