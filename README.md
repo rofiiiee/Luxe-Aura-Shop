@@ -1,5 +1,4 @@
 
-````markdown
 #  Luxe Aura | Premium Jewelry E-commerce Store
 
 **Luxe Aura** is a sophisticated e-commerce platform designed for the high-end jewelry market. This project focuses on delivering a luxury user experience (UX) through a modern, responsive interface (UI) and robust front-end functionality.
